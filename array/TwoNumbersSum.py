@@ -1,5 +1,5 @@
 '''
-Question points: 
+Question: 
 1) find two numbers in the array that sums up to a target sum.
 2) No number is repeated
 eg: [-1,5,9,8,11,3,1,6]
