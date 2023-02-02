@@ -4,11 +4,12 @@ Eg: [-1,5,10,20,28,3] and [26,134,135,15,17]
 ans: [28,26]
 '''
 
+#O(n+m) + O(nlogn + mlogm), O(1) space
 def smallestDifference(inputarray1, inputarray2):
     leftPointer = 0
     rightPointer = 0
 
-    smallestDifference = abs(inputarray2[0] - inputarray1[0])
+    smallestDifference = float("inf")
 
     while leftPointer < len(inputarray1)-1 and rightPointer < len(inputarray2)-1:
 
@@ -33,7 +34,7 @@ if __name__ == "__main__":
     inputarray2 = [26,34,10,15,17]
 
     #sort inputs
-    inputarray1.sort()  #adds nlogn complexity
+    inputarray1.sort()  #adds nlogn + mlogm complexity
     inputarray2.sort() 
 
     difference, numberOne, numberTwo =  smallestDifference(inputarray1, inputarray2)

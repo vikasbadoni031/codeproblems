@@ -12,8 +12,7 @@ def convertToDict(inputArray):
     tempDict = {}
     index = 0
     for item in inputArray:
-        tempDict[item] = index
-        index = index + 1
+        tempDict[item] = item
     return tempDict
 
 
@@ -30,7 +29,7 @@ def findSum(inputDict, targetSum):
 if __name__ == "__main__":
     # inputs
     inputArray = [-1,5,9,8,11,3,1,6]
-    targetSum = -5
+    targetSum = 4
 
     inputDict = convertToDict(inputArray)
     solutionPair = findSum(inputDict, targetSum)
