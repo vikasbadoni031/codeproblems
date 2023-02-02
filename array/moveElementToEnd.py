@@ -7,7 +7,7 @@ ans: [1,3,4,2,2,2,2,2]
 '''
 
 
-
+# O(n)T O(1)S
 def moveElementToEnd(inputArray, targetNo):
     LP = 0
     RP = len(inputArray) - 1
